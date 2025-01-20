@@ -1,4 +1,3 @@
-/* ScrollToTopButton.module.css */
 .scrollToTop {
   z-index: 999;
   position: fixed;
@@ -27,4 +26,13 @@
 
 .scrollToTop:hover {
   background-color: #ce7272;
+}
+
+@media screen and (min-width: 1280px) {
+  .scrollToTop {
+    bottom: 35px;
+    right: 35px;
+    width: 70px;
+    height: 70px;
+  }
 }

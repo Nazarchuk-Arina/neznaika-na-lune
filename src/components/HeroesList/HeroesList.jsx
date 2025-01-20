@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const HeroesList = ({ heroes }) => {
   return (
-    <div className={clsx("container", s.heroes_list__inner)}>
+    <div className={s.heroes_list__inner}>
       <h1>Герои</h1>
       <ul className={s.heroes__list}>
         {heroes.map((hero) => (

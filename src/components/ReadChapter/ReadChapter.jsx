@@ -31,17 +31,15 @@ const ReadChapter = () => {
   };
 
   return (
-    <div className={clsx("container", s.read__inner)}>
+    <div className={s.read__inner}>
       <Link to="/read" className={s.back}>
         Вернуться назад
       </Link>
       {chapter ? (
-        <>
+        <div className={s.only_read}>
           <h2 className={s.title}>
             Глава {chapter.id}: {chapter.title}
           </h2>
-          {/* <h2>{chapter.chapter}</h2>
-          <h2 className={s.title}>{chapter.title}</h2> */}
           {chapter.text.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
@@ -62,7 +60,7 @@ const ReadChapter = () => {
               Далее
             </button>
           </div>
-        </>
+        </div>
       ) : (
         <p className={s.error}>Глава не найдена</p>
       )}

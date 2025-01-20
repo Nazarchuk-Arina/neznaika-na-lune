@@ -5,8 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 5px 30px 2px #172554;
   margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 30px 2px #172554;
 }
 
 .navLogo {
@@ -36,7 +37,7 @@
 .navMenuItem:hover {
   cursor: pointer;
   background: #44a8f4;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .navMenuLink {

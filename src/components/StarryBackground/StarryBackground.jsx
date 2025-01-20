@@ -39,7 +39,7 @@ const StarryBackground = () => {
         move: {
           direction: "none",
           enable: true,
-          outModes: "bounce",
+          outModes: "bounce", // Particles bounce off the edges
           random: false,
           speed: 2,
           straight: false,
@@ -49,27 +49,26 @@ const StarryBackground = () => {
             enable: true,
             area: 800,
           },
-          value: 100,
+          value: 100, // Adjust the number of particles
         },
         opacity: {
           animation: {
             enable: true,
-            speed: 0.05,
-            sync: true,
-            startValue: "max",
-            count: 1,
-            destroy: "min",
+            speed: 0.5, // Adjust opacity animation speed
+            sync: false,
           },
-          value: {
-            min: 0,
-            max: 0.5,
-          },
+          value: { min: 0.1, max: 1 }, // Fluctuating opacity values
         },
         shape: {
           type: "circle",
         },
         size: {
           value: { min: 1, max: 5 },
+          animation: {
+            enable: true,
+            speed: 10,
+            minimumValue: 1,
+          },
         },
       },
     }),

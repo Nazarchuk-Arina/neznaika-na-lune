@@ -4,7 +4,7 @@
 
 .read__inner h1 {
   color: #24315e;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 .title span {
   color: #24315e;
@@ -35,7 +35,7 @@
 }
 @media screen and (min-width: 768px) {
   .read__inner h1 {
-    margin-bottom: 47px;
+    margin-bottom: 7px;
   }
   .title {
     margin-bottom: 30px;
@@ -56,7 +56,7 @@
 
 @media screen and (min-width: 1280px) {
   .read__inner h1 {
-    margin-bottom: 40px;
+    margin-bottom: 17px;
   }
   .title {
     margin-bottom: 39px;

@@ -9,7 +9,7 @@ import ScrollToTopButton from "./ScrollToTopButton/ScrollToTopButton.jsx";
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <ScrollToTopButton />
       <Routes>
         <Route path="/" element={<Home />} />
