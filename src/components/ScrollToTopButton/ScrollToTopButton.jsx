@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import s from "./ScrollToTopButton.module.css";
+import { FaAngleDoubleUp } from "react-icons/fa";
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,7 +32,7 @@ const ScrollToTopButton = () => {
       onClick={scrollToTop}
       aria-label="Scroll to top"
     >
-      ⬆
+      <FaAngleDoubleUp />
     </button>
   );
 };
