@@ -32,6 +32,8 @@
 .navMenuItem {
   transition: background 0.3s;
   font-style: 24px;
+  background: #174467;
+  border-radius: 10px;
 }
 
 .navMenuItem:hover {
