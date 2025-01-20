@@ -17,8 +17,8 @@ const ReadAndListenMore = () => {
           <NavLink className={clsx(buildLinkClass, s.button)} to="/read">
             Читать
           </NavLink>
-          <NavLink className={clsx(buildLinkClass, s.button)} to="/listen">
-            Слушать
+          <NavLink className={clsx(buildLinkClass, s.button)} to="/play">
+            Играть
           </NavLink>
         </nav>
       </div>

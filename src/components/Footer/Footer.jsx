@@ -28,8 +28,8 @@ const Footer = () => {
           <NavLink className={buildLinkClass} to="/read">
             Читать
           </NavLink>
-          <NavLink className={buildLinkClass} to="/listen">
-            Слушать
+          <NavLink className={buildLinkClass} to="/play">
+            Играть
           </NavLink>
         </nav>
       </div>
