@@ -9,3 +9,14 @@
   color: #f7e9a0;
   margin-bottom: 20px;
 }
+
+@media screen and (min-width: 768px) {
+  .choose {
+    margin-top: 25px;
+    margin-bottom: 7px;
+  }
+  .message {
+    margin-bottom: 40px;
+    font-size: 25px;
+  }
+}
