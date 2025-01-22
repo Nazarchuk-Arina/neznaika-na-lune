@@ -3,6 +3,7 @@ import StarryBackground from "../../components/StarryBackground/StarryBackground
 import Header from "../../components/Header/Header.jsx";
 import Game from "../../components/CardGame/Game.jsx";
 import s from "./Play.module.css";
+import QuizGame from "../../components/QuizGame/QuizGame.jsx";
 
 const Play = () => {
   return (
@@ -16,6 +17,8 @@ const Play = () => {
           - проверить насколько хорошо ты знаешь героев)
         </h4>
         <Game />
+        <h3 className={s.quiz}>"Космическая битва умов"</h3>
+        <QuizGame />
         <Footer />
       </div>
     </div>

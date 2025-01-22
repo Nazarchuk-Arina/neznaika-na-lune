@@ -9,6 +9,12 @@
   color: #f7e9a0;
   margin-bottom: 20px;
 }
+.quiz {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
 
 @media screen and (min-width: 768px) {
   .choose {
@@ -18,6 +24,11 @@
   .message {
     margin-bottom: 40px;
     font-size: 25px;
+  }
+  .quiz {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 60px;
   }
 }
 
@@ -29,5 +40,10 @@
   .message {
     margin-bottom: 80px;
     font-size: 35px;
+  }
+  .quiz {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 90px;
   }
 }
