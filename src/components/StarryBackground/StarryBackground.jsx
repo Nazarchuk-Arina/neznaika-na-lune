@@ -4,13 +4,25 @@ import { loadSlim } from "@tsparticles/slim";
 
 const StarryBackground = () => {
   const [init, setInit] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
+    // Инициализация tsparticles
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
     }).then(() => {
       setInit(true);
     });
+
+    // Отслеживание изменения ширины экрана
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const options = useMemo(
@@ -39,7 +51,7 @@ const StarryBackground = () => {
         move: {
           direction: "none",
           enable: true,
-          outModes: "bounce", // Particles bounce off the edges
+          outModes: "bounce",
           random: false,
           speed: 2,
           straight: false,
@@ -49,30 +61,30 @@ const StarryBackground = () => {
             enable: true,
             area: 800,
           },
-          value: 100, // Adjust the number of particles
+          value: 100,
         },
         opacity: {
           animation: {
             enable: true,
-            speed: 0.5, // Adjust opacity animation speed
+            speed: 0.5,
             sync: false,
           },
-          value: { min: 0.1, max: 1 }, // Fluctuating opacity values
+          value: { min: 0.1, max: 1 },
         },
         shape: {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: isMobile ? { min: 0.5, max: 2 } : { min: 1, max: 5 }, // Меньше размеры на мобильных устройствах
           animation: {
             enable: true,
-            speed: 10,
-            minimumValue: 1,
+            speed: isMobile ? 5 : 10, // Медленнее на мобильных устройствах
+            minimumValue: 0.5,
           },
         },
       },
     }),
-    []
+    [isMobile]
   );
 
   if (init) {
