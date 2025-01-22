@@ -1,10 +1,11 @@
 .choose {
   margin-top: 15px;
   margin-bottom: 5px;
+  color: #f98787;
 }
 
 .message {
   font-family: "Neucha";
-  color: #f98787;
+  color: #f7e9a0;
   margin-bottom: 20px;
 }
