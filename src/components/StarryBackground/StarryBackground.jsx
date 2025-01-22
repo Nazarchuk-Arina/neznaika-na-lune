@@ -61,7 +61,7 @@ const StarryBackground = () => {
             enable: true,
             area: 800,
           },
-          value: 100,
+          value: isMobile ? 130 : 100, // Увеличено количество частиц на мобильных устройствах
         },
         opacity: {
           animation: {
@@ -75,11 +75,11 @@ const StarryBackground = () => {
           type: "circle",
         },
         size: {
-          value: isMobile ? { min: 0.5, max: 2 } : { min: 1, max: 5 }, // Меньше размеры на мобильных устройствах
+          value: isMobile ? { min: 1, max: 3 } : { min: 1, max: 5 }, // Увеличен размер частиц на мобильных устройствах
           animation: {
             enable: true,
-            speed: isMobile ? 5 : 10, // Медленнее на мобильных устройствах
-            minimumValue: 0.5,
+            speed: isMobile ? 7 : 10,
+            minimumValue: 2,
           },
         },
       },
