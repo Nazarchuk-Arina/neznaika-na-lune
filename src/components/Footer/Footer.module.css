@@ -1,62 +1,118 @@
 .footer__inner {
   background-image: url(../../assets/images/footer/footer-tel-min.png);
   background-size: cover;
-  width: 100%;
-  height: 200px;
   margin: 0 auto;
-  padding-top: 20px;
-  border-radius: 15px;
+  padding: 20px;
+  border-radius: 20px;
   box-shadow: 0 5px 30px 2px #172554;
-}
-.flex {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-img {
-  width: 178px;
-  height: 23px;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav {
+.flex {
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  text-align: right;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.logo_slogan {
+  text-align: left;
+  font-size: 14px;
+  color: #f3f4f6;
+}
+
+.logo {
+  width: 273px;
+  height: 39px;
+  margin: 0 auto;
+}
+
+.slogan {
+  text-align: center;
+  margin-top: 3px;
+  font-size: 8px;
+  color: #fff;
+}
+
+.text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.first_text {
+  text-align: center;
+  font-family: "Neucha";
+  color: #f7e9a0;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.second_text {
+  font-weight: 1200;
+  color: #c9e5f4;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 768px) {
   .footer__inner {
     background-image: url(../../assets/images/footer/footer-tab-min.png);
-    width: 100%;
-    height: 250px;
-    padding-top: 30px;
+    padding: 40px 30px;
   }
 
-  img {
-    width: 273px;
-    height: 39px;
+  .flex {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .nav {
-    gap: 10px;
+  .slogan {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+  .first_text {
+    font-size: 27px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border: 2px dashed #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .second_text {
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .footer__inner {
     background-image: url(../../assets/images/footer/footer-desc-min.png);
-    width: 100%;
     height: 300px;
     padding-top: 50px;
   }
-  .nav {
-    flex-direction: row;
-    gap: 40px;
-    align-items: last baseline;
-  }
-  img {
+
+  .logo {
     width: 326px;
     height: 43px;
+  }
+
+  .slogan {
+    font-size: 12px;
+  }
+
+  .first_text {
+    font-size: 34px;
+    border-radius: 25px;
+    padding: 15px;
+  }
+
+  .second_text {
+    font-size: 18px;
   }
 }

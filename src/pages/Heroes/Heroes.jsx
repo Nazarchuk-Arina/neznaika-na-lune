@@ -3,6 +3,7 @@ import HeroesList from "../../components/HeroesList/HeroesList";
 import StarryBackground from "../../components/StarryBackground/StarryBackground";
 import { data } from "../../assets/data/heroes.js";
 import Header from "../../components/Header/Header.jsx";
+import scafandr from "../../assets/images/heroes/scafandr2.png";
 
 const Heroes = () => {
   return (

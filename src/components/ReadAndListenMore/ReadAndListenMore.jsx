@@ -10,7 +10,7 @@ const ReadAndListenMore = () => {
   return (
     <div className={s.r_and_l_inner}>
       <h3>
-        А теперь погрузимся в увлекательное приключение вместе с Незнайкой!
+        А теперь погрузимся в увлекательное путешествие вместе с Незнайкой!
       </h3>
       <nav className={s.r_and_l_buttons}>
         <NavLink className={clsx(buildLinkClass, s.button)} to="/read">

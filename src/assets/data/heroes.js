@@ -14,6 +14,7 @@
 import neznaikaV from "../images/live-heroes/neznaika-video2.mp4";
 import ponchikV from "../images/live-heroes/ponchik-video2.mp4";
 import znaikaV from "../images/live-heroes/znaika-video.mp4";
+import zvezdochkaV from "../images/live-heroes/zvezdochka-video.mp4";
 
 export const data = [
   {
@@ -40,7 +41,7 @@ export const data = [
   {
     id: 4,
     name: "Звездочка",
-    photo: neznaikaV,
+    photo: zvezdochkaV,
     description:
       "Звёздочка — смелая и решительная журналистка, которая борется за правду и справедливость. Она не побоялась выступить против химических заводов , которые загрязняли воздух, рискуя собственным благополучием ради защиты окружающих. У неё чёрные волосы, голубые глаза и уверенный взгляд. Звёздочка носит красное платье и синие туфли на каблуках, а её образ дополняют золотые серьги, подчеркивающие её элегантность. Её смелость и неравнодушие делают её настоящим примером для подражания.",
   },

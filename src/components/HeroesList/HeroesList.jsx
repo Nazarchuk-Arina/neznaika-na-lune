@@ -2,6 +2,7 @@ import clsx from "clsx";
 import HeroListItem from "../HeroListItem/HeroListItem";
 import s from "./HeroesList.module.css";
 import { NavLink } from "react-router-dom";
+import scafandr from "../../assets/images/heroes/scafandr2.png";
 
 const HeroesList = ({ heroes }) => {
   return (
@@ -21,6 +22,9 @@ const HeroesList = ({ heroes }) => {
           />
         ))}
       </ul>
+      <div>
+        <img className={s.scafandr} src={scafandr} alt="Photo of heroes" />
+      </div>
       <NavLink className={s.button} to="/read">
         Узнай героев поближе!
       </NavLink>
