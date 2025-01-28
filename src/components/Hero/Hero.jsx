@@ -1,21 +1,38 @@
 import s from "./Hero.module.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import rocketaTel from "./../../assets/images/Slider/hero-tel-1-min.png";
-import rocketaTab from "./../../assets/images/Slider/hero-tab-1-min.png";
-import rocketaDesc from "./../../assets/images/Slider/hero-desc-1-min.png";
+import rocketV from "../../assets/images/live-heroes/live-rocket.mp4";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+// import rocketaTel from "./../../assets/images/Slider/hero-tel-1-min.png";
+// import rocketaTab from "./../../assets/images/Slider/hero-tab-1-min.png";
+// import rocketaDesc from "./../../assets/images/Slider/hero-desc-1-min.png";
 
 const Hero = () => {
   return (
     <div className={s.hero__inner}>
       <div className={s.h1__stars}>
         <h1>Незнайка на луне</h1>
+        <div className={s.rocket}>
+          <video
+            className={s.rocket}
+            src={rocketV}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
       </div>
+    </div>
+  );
+};
 
-      <Swiper
+export default Hero;
+
+{
+  /* <Swiper
         cssMode={true}
         navigation={true}
         pagination={true}
@@ -35,9 +52,5 @@ const Hero = () => {
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
-      </Swiper>
-    </div>
-  );
-};
-
-export default Hero;
+      </Swiper> */
+}

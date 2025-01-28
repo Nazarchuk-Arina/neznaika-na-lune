@@ -7,14 +7,16 @@ const HeroesList = ({ heroes }) => {
   return (
     <div className={s.heroes_list__inner}>
       <h1>Герои</h1>
+      <h4 className={s.message}>Друзья оживлены нейросетью!</h4>
       <ul className={s.heroes__list}>
         {heroes.map((hero) => (
           <HeroListItem
             key={hero.id}
             name={hero.name}
-            tel={hero.tel}
-            tab={hero.tab}
-            desc={hero.desc}
+            // tel={hero.tel}
+            // tab={hero.tab}
+            // desc={hero.desc}
+            photo={hero.photo}
             description={hero.description}
           />
         ))}
