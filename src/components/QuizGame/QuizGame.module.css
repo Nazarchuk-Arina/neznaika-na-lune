@@ -123,6 +123,7 @@
 @media screen and (min-width: 768px) {
   .App {
     width: 640px;
+    margin-bottom: 50px;
   }
   .question_of {
     margin-bottom: 30px;
@@ -160,6 +161,7 @@
 @media screen and (min-width: 1280px) {
   .App {
     width: 800px;
+    margin-bottom: 80px;
   }
   .question_of {
     margin-bottom: 30px;
